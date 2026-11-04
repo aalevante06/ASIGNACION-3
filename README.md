@@ -12,22 +12,6 @@
 
 ---
 
-## 🕹️ Mapa interactivo de la red
-
-**Explora la topología de la Asignación #3:** selecciona el Router, el Switch, el servidor Zabbix, Cloud1 o Windows para consultar sus direcciones IP, interfaces, funciones y monitoreo SNMP. El mapa funciona sin dependencias externas.
-
-<p align="center">
-  <a href="index.html" title="Abrir mapa interactivo de la topología">
-    <img src="images/00_mapa_interactivo_preview.png" alt="Vista previa del mapa interactivo de la red Zabbix" width="900">
-  </a>
-</p>
-
-<p align="center"><strong>🖱️ <a href="index.html">ABRIR MAPA INTERACTIVO</a></strong> · <a href="mapa-interactivo.html">Ver archivo del mapa</a></p>
-
-> **Cómo utilizarlo:** descarga el repositorio y abre `index.html` en el navegador. GitHub permite ver el archivo HTML, pero no ejecuta directamente su JavaScript dentro del visor de código. Para abrirlo como sitio web público, publica este repositorio con **GitHub Pages** (Actions); `index.html` será la página inicial.
-
----
-
 ## 📑 Tabla de contenido
 
 1. [Objetivo del laboratorio](#-objetivo-del-laboratorio)
