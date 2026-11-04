@@ -1,0 +1,9 @@
+# Configuración efectiva del servidor ZABBIX-SV-2174
+network:
+  version: 2
+  ethernets:
+    ens3:
+      match:
+        macaddress: "0c:6e:82:e7:00:00"
+      set-name: ens3
+      dhcp4: true

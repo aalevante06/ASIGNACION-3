@@ -1,0 +1,21 @@
+! Fragmentos funcionales utilizados en el laboratorio — Switch-2174
+conf t
+interface Vlan1
+ ip address 192.168.79.2 255.255.255.0
+ no shutdown
+exit
+ip default-gateway 192.168.79.254
+interface GigabitEthernet0/0
+ switchport mode access
+exit
+interface GigabitEthernet0/1
+ switchport mode access
+exit
+interface GigabitEthernet1/3
+ switchport mode access
+exit
+snmp-server community ZABBIX-RO RO
+snmp-server location LAB-GNS3
+snmp-server contact ADMIN-2174
+end
+write memory

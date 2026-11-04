@@ -1,0 +1,52 @@
+! Running-config — R1-2174
+! Capturado: 04-11-2026
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+hostname R1-2174
+no aaa new-model
+no ip icmp rate-limit unreachable
+ip dhcp excluded-address 192.168.79.1 192.168.79.99
+ip dhcp excluded-address 192.168.79.201 192.168.79.254
+ip dhcp pool LAN-ZABBIX
+ network 192.168.79.0 255.255.255.0
+ default-router 192.168.79.254
+ dns-server 8.8.8.8
+no ip domain lookup
+ip cef
+no ipv6 cef
+multilink bundle-name authenticated
+ip tcp synwait-time 5
+interface FastEthernet0/0
+ ip address 192.168.79.254 255.255.255.0
+ duplex full
+interface FastEthernet1/0
+ no ip address
+ shutdown
+ speed auto
+ duplex auto
+interface FastEthernet1/1
+ no ip address
+ shutdown
+ speed auto
+ duplex auto
+ip forward-protocol nd
+no ip http server
+no ip http secure-server
+snmp-server community ZABBIX-RO RO
+snmp-server location LAB-GNS3
+snmp-server contact ADMIN-2174
+control-plane
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ stopbits 1
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ stopbits 1
+line vty 0 4
+ login
+end
