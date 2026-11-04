@@ -69,8 +69,6 @@ La topología conecta R1-2174 con Switch-2174 y ZABBIX-SV-2174. Cloud1 enlaza el
 
 ### 🖱️ Mapa interactivo de la topología
 
-El siguiente diagrama se **renderiza directamente dentro de GitHub**, sin salir del README. En GitHub puedes ampliarlo con el control de pantalla completa del diagrama. Para consultar los detalles de cada equipo, despliega sus fichas debajo del mapa.
-
 ```mermaid
 flowchart TB
     R["🌐 R1-2174<br/>Fa0/0 · 192.168.79.254<br/>DHCP / SNMP RO"]
@@ -136,8 +134,6 @@ flowchart TB
 - No requiere acceso a Internet para el monitoreo local.
 
 </details>
-
-Como vista adicional, se conserva [el mapa HTML independiente](mapa-interactivo.html), pero **el diagrama y las fichas desplegables anteriores ya se encuentran en este README**.
 
 ### Tabla de direccionamiento
 
