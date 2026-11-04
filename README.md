@@ -18,7 +18,6 @@
 2. [Cumplimiento de requisitos](#-cumplimiento-de-requisitos)
 3. [Mapa interactivo de la red](#️-mapa-interactivo-de-la-red)
 5. [Topología y direccionamiento](#️-topología-y-direccionamiento)
-   - [Mapa interactivo de la topología](#-mapa-interactivo-de-la-topología)
 5. [Componentes del entorno](#-componentes-del-entorno)
 6. [Funcionamiento de la configuración](#-funcionamiento-de-la-configuración)
 7. [Configuración del router y DHCP](#-configuración-del-router-y-dhcp)
